@@ -52,7 +52,7 @@ def import_report(fileobj):
 
 def import_host(session, dbreport, host):
     if session.query(NessusHost.id).filter(NessusHost.ip==host.ip).first():
-        log.warning("Host %s already exist", report.ip)
+        log.warning("Host %s already exist", host.ip)
 
     dbhost = NessusHost()
     dbhost.credential_scan = host.get_host_property('Credential_Scan') == 'true'
