@@ -1,4 +1,4 @@
 # PyQt5
 -e git+https://github.com/savon-noir/python-libnessus.git#egg=libnessus
-SQLAlchemy==1.0.9
+SQLAlchemy==1.3.0
 SQLAlchemy-Utils==0.31.2
